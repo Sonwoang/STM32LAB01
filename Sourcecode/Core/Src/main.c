@@ -19,7 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include "EX4.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -54,7 +54,7 @@ static void MX_GPIO_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+int num = 0;
 /* USER CODE END 0 */
 
 /**
@@ -107,45 +107,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, SET);
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, SET);				//D1-V2
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, SET);
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, SET);
-		HAL_Delay(2000);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_9);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
-
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, SET);			//X1-D2
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_11, SET);
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, SET);
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, SET);
-		HAL_Delay(3000);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_2);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_11);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_6);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
-
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, SET);				//V1-D2
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, SET);
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, SET);
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, SET);
-		HAL_Delay(2000);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_10);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_6);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
-
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, SET);					//D1-X2
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, SET);
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, SET);
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, SET);
-		HAL_Delay(3000);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_9);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_8);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
+	  Ex4(num);
+	  num++;
+	  if(num >= 10) num = 0;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
