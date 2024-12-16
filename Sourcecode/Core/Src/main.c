@@ -109,7 +109,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  setNumberOnClock(num);
+	  clearNumberOnClock(num);
 
     /* USER CODE END WHILE */
 
