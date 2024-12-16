@@ -2397,17 +2397,17 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_macro   0x0000000000015459      0x1ed ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
  .debug_macro   0x0000000000015646      0x194 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 
-.debug_line     0x0000000000000000     0x4c0b
- .debug_line    0x0000000000000000      0x6bc ./Core/Src/EX4.o
- .debug_line    0x00000000000006bc      0x6f9 ./Core/Src/main.o
- .debug_line    0x0000000000000db5      0x635 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_line    0x00000000000013ea      0x6f6 ./Core/Src/stm32f1xx_it.o
- .debug_line    0x0000000000001ae0      0x6b2 ./Core/Src/system_stm32f1xx.o
- .debug_line    0x0000000000002192       0x86 ./Core/Startup/startup_stm32f103c6ux.o
- .debug_line    0x0000000000002218      0x8df ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_line    0x0000000000002af7      0xac7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_line    0x00000000000035be      0x962 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_line    0x0000000000003f20      0xceb ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+.debug_line     0x0000000000000000     0x4c0d
+ .debug_line    0x0000000000000000      0x6be ./Core/Src/EX4.o
+ .debug_line    0x00000000000006be      0x6f9 ./Core/Src/main.o
+ .debug_line    0x0000000000000db7      0x635 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_line    0x00000000000013ec      0x6f6 ./Core/Src/stm32f1xx_it.o
+ .debug_line    0x0000000000001ae2      0x6b2 ./Core/Src/system_stm32f1xx.o
+ .debug_line    0x0000000000002194       0x86 ./Core/Startup/startup_stm32f103c6ux.o
+ .debug_line    0x000000000000221a      0x8df ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_line    0x0000000000002af9      0xac7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_line    0x00000000000035c0      0x962 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_line    0x0000000000003f22      0xceb ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 
 .debug_str      0x0000000000000000    0x79bfe
  .debug_str     0x0000000000000000    0x786c7 ./Core/Src/EX4.o
