@@ -19,7 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "EX7.h"
+#include "EX8.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -55,6 +55,7 @@ static void MX_GPIO_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 int counter = 0;
+int num = 0;
 /* USER CODE END 0 */
 
 /**
@@ -101,13 +102,14 @@ int main(void)
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, RESET);		//D1
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, RESET);		//V1
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_11, RESET);		//X1
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  void clearAllClock(void);
+	  setNumberOnClock(num);
 
     /* USER CODE END WHILE */
 
