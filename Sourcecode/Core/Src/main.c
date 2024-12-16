@@ -19,8 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "EX4.h"
-#include "EX5.h"
+#include "EX7.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -108,9 +107,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  Ex5(counter);
-	  counter++;
-	  if(counter >= 10) counter = 0;
+	  void clearAllClock(void);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
