@@ -54,7 +54,7 @@ static void MX_GPIO_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int num = 0;
+int counter = 0;
 /* USER CODE END 0 */
 
 /**
@@ -107,9 +107,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  Ex4(num);
-	  num++;
-	  if(num >= 10) num = 0;
+	  Ex4(counter);
+	  counter++;
+	  if(counter >= 10) counter = 0;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

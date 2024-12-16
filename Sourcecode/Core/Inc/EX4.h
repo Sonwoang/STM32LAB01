@@ -8,7 +8,7 @@
 #ifndef INC_EX4_H_
 #define INC_EX4_H_
 #include "stm32f1xx_hal.h"
-void Ex4(int num);
+void Ex4(int counter);
 
 
 #endif /* INC_EX4_H_ */

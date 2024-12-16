@@ -5,8 +5,8 @@
  *      Author: LENOVO
  */
 #include "Ex4.h"
-void SegLedDisplay(int num){
-	switch(num){
+void display7SEG(int counter){
+	switch(counter){
 			case 0:
 				HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, RESET);
 				HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, RESET);
@@ -99,35 +99,35 @@ void SegLedDisplay(int num){
 	}
 }
 
-void Ex4(int num){
+void Ex4(int counter){
 
-	if(num <= 1){
+	if(counter <= 1){
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, SET);
-		SegLedDisplay(num);
+		display7SEG(counter);
 	}
-	else if (num <= 4){
+	else if (counter <= 4){
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_11, SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, SET);
-		SegLedDisplay(num);
+		display7SEG(counter);
 	}
-	else if(num <= 6){
+	else if(counter <= 6){
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, SET);
-		SegLedDisplay(num);
+		display7SEG(counter);
 	}
-	else if(num <= 9){
+	else if(counter <= 9){
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, SET);
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, SET);
-		SegLedDisplay(num);
+		display7SEG(counter);
 	}
 
 	HAL_Delay(1000);
