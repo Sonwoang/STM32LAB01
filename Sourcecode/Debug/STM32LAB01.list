@@ -205,8 +205,6 @@ void clearNumberOnClock(int num){
 			break;
  8000228:	bf00      	nop
 	}
-
-
 }
  800022a:	bf00      	nop
  800022c:	3708      	adds	r7, #8

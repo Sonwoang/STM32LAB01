@@ -47,7 +47,5 @@ void setNumberOnClock(int num){
 		default:
 			break;
 	}
-
-
 }
 

@@ -47,7 +47,5 @@ void clearNumberOnClock(int num){
 		default:
 			break;
 	}
-
-
 }
 
